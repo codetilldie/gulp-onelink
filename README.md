@@ -16,12 +16,15 @@ npm install --save-dev xuyang2/gulp-onelink
 
 ## Usage
 
-    gulp.task('dlc.html', function() {
-        gulp.src('webdev/lottery/dlc/*.html')
-            .pipe(onelink())
-            .pipe(gulp.dest('webapp/lottery/dlc'));
-    });
+```js
+var gulp = require('gulp');
+var onelink = require('gulp-onelink');
 
+gulp.task('dlc.html', function() {
+    gulp.src('webdev/lottery/dlc/*.html')
+        .pipe(onelink())
+        .pipe(gulp.dest('webapp/lottery/dlc'));
+});
 ```
 
 
@@ -29,6 +32,16 @@ An example of this in completed form can be seen below:
 
     <html>
     <head>
+
+        <!-- build:onelink css id1 -->
+        <link type="text/css" rel="stylesheet" href="http://cache.500boss.com/mobile/widget/head/head.css"/>
+        <link type="text/css" rel="stylesheet" href="http://cache.500boss.com/mobile/widget/alert/alert.css"/>
+        <link type="text/css" rel="stylesheet" href="http://cache.500boss.com/mobile/widget/navbox/navbox.css"/>
+        <link type="text/css" rel="stylesheet" href="http://cache.500boss.com/mobile/widget/topbtns/topbtns.css"/>
+        <link type="text/css" rel="stylesheet" href="http://cache.500boss.com/mobile/widget/foot/foot.css"/>
+        <link type="text/css" rel="stylesheet" href="http://cache.500boss.com/mobile/touch/css/jingcai.css"/>
+        <!-- endbuild -->
+
     </head>
     <body>
 
@@ -72,6 +85,9 @@ The resulting HTML would be:
 
     <html>
     <head>
+
+        <link type="text/css" rel="stylesheet" href="http://cache.500boss.com/mobile/??widget/head/head.css,widget/alert/alert.css,widget/navbox/navbox.css,widget/topbtns/topbtns.css,widget/foot/foot.css,touch/css/jingcai.css" />
+
     </head>
     <body>
 
