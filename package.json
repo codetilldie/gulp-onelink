@@ -1,7 +1,7 @@
 {
   "name": "gulp-onelink",
   "version": "0.0.1",
-  "description": "",
+  "description": "> Parse build blocks in HTML files to combo non-optimized js or css links.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

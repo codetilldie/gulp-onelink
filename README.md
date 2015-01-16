@@ -16,6 +16,11 @@ npm install --save-dev xuyang2/gulp-onelink
 
 ## Usage
 
+    gulp.task('dlc.html', function() {
+        gulp.src('webdev/lottery/dlc/*.html')
+            .pipe(onelink())
+            .pipe(gulp.dest('webapp/lottery/dlc'));
+    });
 
 ```
 
