@@ -2,12 +2,16 @@
   "name": "gulp-onelink",
   "version": "0.0.1",
   "description": "> Parse build blocks in HTML files to combo non-optimized js or css links.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xuyang2/gulp-onelink"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "gulp": "^3.8.10",
     "gulp-util": "^3.0.2",
