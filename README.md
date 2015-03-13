@@ -1,16 +1,13 @@
 # gulp-onelink
 
-> Parse build blocks in HTML files to combo non-optimized js or css links.
-
-Inspired by the grunt plugin [grunt-useref](https://github.com/pajtai/grunt-useref).
-
+> Parse build blocks in HTML files to combo js or css links.
 
 ## Install
 
 Install with [npm]
 
 ```
-npm install --save-dev xuyang2/gulp-onelink
+npm install --save-dev gulp-onelink@0.1.0
 ```
 
 
@@ -33,19 +30,19 @@ An example of this in completed form can be seen below:
     <html>
     <head>
 
-        <!-- build:onelink css id1 -->
+        <!-- onelink:css id1 -->
         <link type="text/css" rel="stylesheet" href="http://cache.500boss.com/mobile/widget/head/head.css"/>
         <link type="text/css" rel="stylesheet" href="http://cache.500boss.com/mobile/widget/alert/alert.css"/>
         <link type="text/css" rel="stylesheet" href="http://cache.500boss.com/mobile/widget/navbox/navbox.css"/>
         <link type="text/css" rel="stylesheet" href="http://cache.500boss.com/mobile/widget/topbtns/topbtns.css"/>
         <link type="text/css" rel="stylesheet" href="http://cache.500boss.com/mobile/widget/foot/foot.css"/>
         <link type="text/css" rel="stylesheet" href="http://cache.500boss.com/mobile/touch/css/jingcai.css"/>
-        <!-- endbuild -->
+        <!-- endonelink -->
 
     </head>
     <body>
 
-        <!-- build:onelink js id1 -->
+        <!-- onelink:js lib -->
         <script type="text/javascript" src="../js/vendor/underscore/1.6.0/underscore.min.js"></script>
         <script type="text/javascript" src="../js/vendor/zepto/1.1.4/zepto-custom.min.js"></script>
         <script type="text/javascript" src="../js/esun/base/esun_def.js"></script>
@@ -59,22 +56,22 @@ An example of this in completed form can be seen below:
         <script type="text/javascript" src="../js/esun/base/view.js"></script>
         <script type="text/javascript" src="../js/esun/lottery/config.js"></script>
         <script type="text/javascript" src="../js/esun/lottery/buy.js"></script>
-        <!-- endbuild -->
+        <!-- endonelink -->
 
-        <!-- build:onelink js id2 -->
+        <!-- onelink:js vendor -->
         <script type="text/javascript" src="../resource/js/vendor/underscore/underscore.min.js"></script>
         <script type="text/javascript" src="../resource/js/vendor/cookies-js/cookies.min.js"></script>
         <script type="text/javascript" src="../resource/js/vendor/angular/angular.min.js"></script>
         <script type="text/javascript" src="../resource/js/vendor/angular-route/angular-route.min.js"></script>
         <script type="text/javascript" src="../resource/js/vendor/angular-touch/angular-touch.min.js"></script>
         <script type="text/javascript" src="../resource/js/vendor/iscroll/iscroll.min.js"></script>
-        <!-- endbuild -->
+        <!-- endonelink -->
 
-        <!-- build:onelink js id3 -->
+        <!-- onelink:js app -->
         <script type="text/javascript" src="js/app.js"></script>
         <script type="text/javascript" src="js/service.js"></script>
         <script type="text/javascript" src="js/controller.js"></script>
-        <!-- endbuild -->
+        <!-- endonelink -->
 
     </body>
     </html>
